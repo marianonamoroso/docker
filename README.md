@@ -2,7 +2,7 @@
 <h1>Docker</h1>
 This repository contains helpful use commands and exercises for training Docker.
 
-<b>Exercises: Docker Hands-on Workshop/Labs (Practical)</b><br> 
+<b>Exercises:</b><br> 
 
 - https://dockerlabs.collabnix.com/
 
