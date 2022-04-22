@@ -14,6 +14,24 @@ This repository contains helpful use commands and exercises for training Docker.
       <details><summary>Show</summary>
 
       ```
+      docker pull hello-world
+      docker images
+      ```
+      ```
       docker run hello-world
+      docker ps -a
+      docker inspect <YOUR_CONTAINER_ID>
+      ```
+      </details>
+
+2. <b>Working with Docker Images</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker images
+      ```
+      ```
+      docker pull nginx
+      docker images nginx # you can list only by name and tag (docker images nginx:latest)
       ```
       </details>
