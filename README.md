@@ -4,7 +4,7 @@ This repository contains helpful use commands and exercises for training Docker.
 
 <b>Exercises:</b><br> 
 
-- https://dockerlabs.collabnix.com/
+- https://dockerlabs.collabnix.com
 
 <h2>Docker101</h2>
 
