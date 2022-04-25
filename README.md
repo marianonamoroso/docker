@@ -57,6 +57,7 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       </details>
 
+<<<<<<< HEAD
 4. <b>How to build Your First Alpine Docker Image and Push it to DockerHub</b>
       <details><summary>Show</summary>
 
@@ -85,3 +86,5 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       </details>
 
+=======
+>>>>>>> 559b38fc76e0ba4b0174dd4b80d78848e25cc648
