@@ -153,7 +153,7 @@ This repository contains helpful use commands and exercises for training Docker.
 
 <h3>Dockerfile</h3>
 
-1. <b>Create an image with GIT installed</b>
+1. <b>LAB 1: Create an image with GIT installed</b>
       <details><summary>Show</summary>
 
       ```
