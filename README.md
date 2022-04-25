@@ -247,3 +247,19 @@ This repository contains helpful use commands and exercises for training Docker.
       docker rmi $(docker images -a -q)
       ```
       </details>
+
+6. <b>LAB 6: WORKDIR instruction</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker build -t agocho/alpine-workdir . # you have to go into the lab6 folder and find the content of the Dockerfile
+      ```
+      ```
+      docker images
+      docker run -it agocho/alpine-workdir sh # you have to see the echo output configured
+      ```
+      ```
+      docker rm $(docker ps -a -q) -f 
+      docker rmi $(docker images -a -q) -f 
+      ```
+      </details>
