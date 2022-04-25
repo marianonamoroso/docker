@@ -195,3 +195,16 @@ This repository contains helpful use commands and exercises for training Docker.
       exit
       ```
       </details>
+
+2. <b>LAB 3: Create an image with COPY instruction</b>
+      <details><summary>Show</summary>
+
+      ```
+      echo "Welcome to NGINX"  > index.html
+      docker build -t agocho/nginx-copy . # you have to go into the lab3 folder and find the content of the Dockerfile
+      ```
+      ```
+      docker images
+      docker run -d --name myapp1 -p 8080:80 agocho/nginx-copy
+      ```
+      </details>
