@@ -212,6 +212,18 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       </details>
 
+4. <b>LAB 4: Create an image with CMD instruction</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker build -t agocho/alpine-cmd . # you have to go into the lab4 folder and find the content of the Dockerfile
+      ```
+      ```
+      docker images
+      docker run agocho/alpine-cmd # you should see the output of the CMD
+      ```
+      </details>
+
 5. <b>LAB 5: Create an image with ENTRYPOINT instruction</b>
       <details><summary>Show</summary>
 
