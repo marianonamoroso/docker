@@ -35,3 +35,24 @@ This repository contains helpful use commands and exercises for training Docker.
       docker images nginx # you can list only by name and tag (docker images nginx:latest)
       ```
       </details>
+
+3. <b>Saving Images and Containers as Tar Files for Sharing</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker run -d -p 80:80 nginx
+      docker ps
+      ```
+      ```
+      docker export <YOUR_CONTAINER_ID> > nginx.tar
+      docker import - importnginx < nginx.tar
+      docker images # you can check the new image importnginx
+      ```
+      ```
+      docker save -o savenginx.tar nginx
+      ls -la
+      ```
+      ```
+      docker rmi importnginx
+      ```
+      </details>
