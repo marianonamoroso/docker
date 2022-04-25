@@ -35,7 +35,6 @@ This repository contains helpful use commands and exercises for training Docker.
       docker images nginx # you can list only by name and tag (docker images nginx:latest)
       ```
       </details>
-<<<<<<< HEAD
 
 3. <b>Saving Images and Containers as Tar Files for Sharing</b>
       <details><summary>Show</summary>
@@ -57,5 +56,4 @@ This repository contains helpful use commands and exercises for training Docker.
       docker rmi importnginx
       ```
       </details>
-=======
->>>>>>> 75e09bec644581a5615619b36e737be823bd51e6
+
