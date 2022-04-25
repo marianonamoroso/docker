@@ -100,7 +100,54 @@ This repository contains helpful use commands and exercises for training Docker.
       exit
       ```
       ```
-      docker attach <YOUR_CONTAINER> # you can also use, docker attach in order to connect to
+      docker attach <YOUR_CONTAINER> # you can also use docker attach in order to connect to
       exit
       ```
       </details>
+
+2. <b>Running a command inside running Container</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker run -dit ubuntu
+      docker exec -it <YOUR_CONTAINER> bash
+      exit
+      ```
+      </details>
+      
+3. <b>Managing Docker containers</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker rm -f $(docker ps -a -q) # you clean your desktop host
+      ```
+      ```
+      docker run -d -p 8080:80 --name app1 nginx:latest
+      docker run -d -p 8081:80 --name app2 nginx:latest
+      docker ps
+      ```
+      ```
+      docker stop app1 # you can stop your container named: app1
+      docker kill app2 # you can kill your container named: app2
+      docker ps -a # list all the containers (including non running containers)
+      ```
+      ```
+      docker start app1 app2
+      docker ps
+      ```
+      ```
+      docker restart app2
+      docker info
+      docker top app1 # show the running process in the first container
+      docker history nginx:latest
+      ```
+      ```
+      docker inspect app1
+      docker inspect app2
+      ```
+      ```
+      docker logs app1
+      docker logs app2
+      ```
+      </details>
+
