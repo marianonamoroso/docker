@@ -179,7 +179,7 @@ This repository contains helpful use commands and exercises for training Docker.
       <details><summary>Show</summary>
 
       ```
-      docker build -t agocho/alpine-add . # you have to go into the lab1 folder and find the content of the Dockerfile
+      docker build -t agocho/alpine-add . # you have to go into the lab2 folder and find the content of the Dockerfile
       ```
       ```
       docker images
@@ -191,7 +191,7 @@ This repository contains helpful use commands and exercises for training Docker.
       docker attach <YOUR_CONTAINER_ID>
       ```
       ```
-      ls -la 
+      ls -la pharosc_8.4.tar.gz
       exit
       ```
       </details>
