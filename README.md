@@ -174,3 +174,24 @@ This repository contains helpful use commands and exercises for training Docker.
       exit
       ```
       </details>
+
+2. <b>LAB 2: Create an image with ADD instruction</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker build -t agocho/alpine-add . # you have to go into the lab1 folder and find the content of the Dockerfile
+      ```
+      ```
+      docker images
+      docker tag agocho/alpine-add agocho/alpine-add:1.0
+      ```
+      ```
+      docker run -itd agocho/alpine-add:1.0 /bin/sh
+      docker ps
+      docker attach <YOUR_CONTAINER_ID>
+      ```
+      ```
+      ls -la 
+      exit
+      ```
+      </details>
