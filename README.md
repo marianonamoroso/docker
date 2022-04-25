@@ -57,3 +57,30 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       </details>
 
+4. <b>How to build Your First Alpine Docker Image and Push it to DockerHub</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker run -d alpine sh
+      ```
+      ```
+      docker exec -it <YOUR_CONTINAER_ID> sh # you can login into the container
+      ```
+      ```
+      whoami
+      cat /etc/*release
+      apk update
+      apk add git
+      exit
+      ```
+      ```
+      docker commit -m "GIT was added" <YOUR_CONTAINER_ID> agocho/alpine-git
+      docker tag agocho/alpine-git:latest agocho/alpine-git:1.0
+      docker images # you should see your new image called: agocho/alpine-git with the following tag: 1.0
+      docker push agocho/alpine-git:1.0 # push your image in your personal docker account
+      ```
+      ```
+      docker rmi <IDs> -f # you have to clean your environment (images)
+      docker rm <IDs> -f # you have to clean your environment (containers)
+      ```
+      </details>
