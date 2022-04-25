@@ -8,7 +8,7 @@ This repository contains helpful use commands and exercises for training Docker.
 
 <h2>Docker101</h2>
 
-<h3>Getting Started with Docker Image</h3>
+<h3>Docker Image</h3>
 
 1. <b>Hello World Example</b>
       <details><summary>Show</summary>
@@ -151,3 +151,26 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       </details>
 
+<h3>Dockerfile</h3>
+
+1. <b>Create an image with GIT installed</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker build -t agocho/alpine-git . # you have to go into the lab1 folder and find the content of the Dockerfile
+      ```
+      ```
+      docker images
+      docker tag agocho/alpine-git agocho/alpine-git:1.1
+      docker push agocho/alpine-git:1.1
+      ```
+      ```
+      docker run -itd agocho/alpine-git:1.1 /bin/sh
+      docker ps
+      docker attach <YOUR_CONTAINER_ID>
+      ```
+      ```
+      git --version
+      exit
+      ```
+      </details>
