@@ -84,3 +84,23 @@ This repository contains helpful use commands and exercises for training Docker.
       docker rm <IDs> -f # you have to clean your environment (containers)
       ```
       </details>
+
+<h3>Accessing & Managing Docker Container</h3>
+
+1. <b>Accessing the Container Shell</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker run -dit ubuntu
+      docker images
+      docker ps # you should see your ubuntu cotainer running 
+      ```
+      ```
+      docker exec -it <YOUR_CONTAINER> bash
+      exit
+      ```
+      ```
+      docker attach <YOUR_CONTAINER> # you can also use, docker attach in order to connect to
+      exit
+      ```
+      </details>
