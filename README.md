@@ -263,3 +263,19 @@ This repository contains helpful use commands and exercises for training Docker.
       docker rmi $(docker images -a -q) -f 
       ```
       </details>
+
+7. <b>LAB 7: RUN instruction</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker build -t agocho/alpine-run . # you have to go into the lab7 folder and find the content of the Dockerfile
+      ```
+      ```
+      docker images
+      docker run -d -it agocho/alpine-run:latest
+      ```
+      ```
+      docker rm $(docker ps -a -q) -f 
+      docker rmi $(docker images -a -q) -f 
+      ```
+      </details>
