@@ -278,4 +278,7 @@ This repository contains helpful use commands and exercises for training Docker.
       docker rm $(docker ps -a -q) -f 
       docker rmi $(docker images -a -q) -f 
       ```
+      ```
+      docker history agocho/alpine-run:latest # you can check all the layers
+      ```
       </details>
