@@ -442,3 +442,23 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       
       </details>
+
+16. <b>LAB 16: ENTRYPOINT W/ RUN</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker build -t agocho/busybox-entrypoint . # you have to go into the lab16 folder and find the content of the Dockerfile
+      ```
+      ```
+      docker images
+      docker run --name entrypoint-cat-passwd agocho/busybox-entrypoint:latest
+      ```
+      ```
+      docker run --name entrypoint-cat-shadow agocho/busybox-entrypoint:latest /etc/shadow # you can override the CMD
+      ```
+      ```
+      docker rm $(docker ps -aq) -f 
+      docker rmi $(docker images -aq) -f 
+      ```
+      
+      </details>
