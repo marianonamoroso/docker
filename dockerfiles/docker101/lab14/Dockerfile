@@ -2,6 +2,8 @@
 
 FROM nginx:latest
 
+LABEL LAB="#14"
+
 ENV NGINX_PORT=80
 
 HEALTHCHECK --interval=30s --timeout=3s \

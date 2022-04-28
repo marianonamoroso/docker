@@ -426,3 +426,19 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       
       </details>
+
+15. <b>LAB 15: SHELL</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker buid -t agocho/windows-shell . # you have to go into the lab15 folder and find the content of the Dockerfile
+      ```
+      ```
+      docker run agocho/windows-shell
+      ```
+      ```
+      docker rm $(docker ps -aq) -f 
+      docker rmi $(docker images -aq) -f 
+      ```
+      
+      </details>
