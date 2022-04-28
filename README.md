@@ -153,7 +153,7 @@ This repository contains helpful use commands and exercises for training Docker.
 
 <h3>Dockerfile</h3>
 
-1. <b>LAB 1: Create an image with GIT installed</b>
+1. <b>LAB 1: IMAGE W/ GIT</b>
       <details><summary>Show</summary>
 
       ```
@@ -175,7 +175,7 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       </details>
 
-2. <b>LAB 2: Create an image with ADD instruction</b>
+2. <b>LAB 2: ADD</b>
       <details><summary>Show</summary>
 
       ```
@@ -196,7 +196,7 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       </details>
 
-3. <b>LAB 3: Create an image with COPY instruction</b>
+3. <b>LAB 3: COPY</b>
       <details><summary>Show</summary>
 
       ```
@@ -212,7 +212,7 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       </details>
 
-4. <b>LAB 4: Create an image with CMD instruction</b>
+4. <b>LAB 4: CMD</b>
       <details><summary>Show</summary>
 
       ```
@@ -224,7 +224,7 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       </details>
 
-5. <b>LAB 5: Create an image with ENTRYPOINT instruction</b>
+5. <b>LAB 5: ENTRYPOINT</b>
       <details><summary>Show</summary>
 
       ```
@@ -248,7 +248,7 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       </details>
 
-6. <b>LAB 6: WORKDIR instruction</b>
+6. <b>LAB 6: WORKDIR</b>
       <details><summary>Show</summary>
 
       ```
@@ -264,7 +264,7 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       </details>
 
-7. <b>LAB 7: RUN instruction</b>
+7. <b>LAB 7: RUN</b>
       <details><summary>Show</summary>
 
       ```
@@ -284,7 +284,7 @@ This repository contains helpful use commands and exercises for training Docker.
       
       </details>
       
-8. <b>LAB 8: Create an image with ARG instruction</b>
+8. <b>LAB 8: ARG</b>
       <details><summary>Show</summary>
 
       ```
@@ -302,7 +302,7 @@ This repository contains helpful use commands and exercises for training Docker.
       
       </details>
 
-9. <b>LAB 9: ENV instruction</b>
+9. <b>LAB 9: ENV</b>
       <details><summary>Show</summary>
 
       ```
@@ -322,7 +322,7 @@ This repository contains helpful use commands and exercises for training Docker.
       
       </details>
 
-10. <b>LAB 10: VOLUME instruction</b>
+10. <b>LAB 10: VOLUME</b>
       <details><summary>Show</summary>
 
       ```
@@ -341,7 +341,7 @@ This repository contains helpful use commands and exercises for training Docker.
       
       </details>
 
-11. <b>LAB 11: EXPOSE instruction</b>
+11. <b>LAB 11: EXPOSE</b>
       <details><summary>Show</summary>
 
       ```
@@ -361,7 +361,7 @@ This repository contains helpful use commands and exercises for training Docker.
       
       </details>
 
-12. <b>LAB 12: LABEL Instruction</b>
+12. <b>LAB 12: LABEL</b>
       <details><summary>Show</summary>
 
       ```
