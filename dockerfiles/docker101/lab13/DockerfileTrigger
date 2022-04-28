@@ -1,0 +1,3 @@
+FROM agocho/busy-onbuild
+
+RUN echo "Running CHILD container"
