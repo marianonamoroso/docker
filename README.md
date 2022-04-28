@@ -332,6 +332,7 @@ This repository contains helpful use commands and exercises for training Docker.
       docker volume ls
       docker inspect --format='{{.Mounts}}' <YOUR_CONTAINER_ID>
       ```
+      ```
       docker rm $(docker ps -aq) -f 
       docker rmi $(docker images -aq) -f 
       ```
