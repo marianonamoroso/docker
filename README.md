@@ -340,3 +340,23 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       
       </details>
+
+11. <b>LAB 11: EXPOSE instruction</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker build -t agocho/nginx-expose . # you have to go into the lab11 folder and find the content of the Dockerfile
+      ```
+      ```
+      docker images
+      docker run -d --rm -P --name nginx-8080 agocho/nginx-expose:latest
+      ```
+      ```
+      docker run -d --rm -p 80:80 --name nginx-80 agocho/nginx-expose:latest # you can override the publish expose port
+      ```
+      ```
+      docker rm $(docker ps -aq) -f 
+      docker rmi $(docker images -aq) -f 
+      ```
+      
+      </details>
