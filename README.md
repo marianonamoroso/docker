@@ -462,3 +462,23 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       
       </details>
+
+17. <b>LAB 17: USER</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker build -t agocho/busybox-user . # you have to go into the lab17 folder and find the content of the Dockerfile
+      ```
+      ```
+      docker images
+      docker run -d --rm -it agocho/busybox-user
+      ```
+      ```
+      docker exec <YOUR_CONTAINER_ID> id 
+      ```
+      ```
+      docker rm $(docker ps -aq) -f 
+      docker rmi $(docker images -aq) -f 
+      ```
+      
+      </details>
