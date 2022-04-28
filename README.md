@@ -2,6 +2,12 @@
 <h1>Docker</h1>
 This repository contains helpful use commands and exercises for training Docker.<br><br>
 
-<b>Exercises:</b><br> 
+<b>Source:</b><br> 
 
 - https://dockerlabs.collabnix.com
+
+<b>Exercises:</b><br> 
+
+- https://github.com/marianonamoroso/docker/tree/main/docker101
+- https://github.com/marianonamoroso/docker/tree/main/docker102
+- https://github.com/marianonamoroso/docker/tree/main/docker103
