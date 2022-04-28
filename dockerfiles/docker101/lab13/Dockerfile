@@ -1,0 +1,4 @@
+# LAB 13: ONBUILD
+
+FROM busybox
+ONBUILD RUN echo "ONBUILD RUN ECHO"

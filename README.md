@@ -360,3 +360,43 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       
       </details>
+
+12. <b>LAB 12: LABEL Instruction</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker build -t agocho/nginx-label:1.0 . # you have to go into the lab12 folder and find the content of the Dockerfile
+      ```
+      ```
+      docker images
+      docker run --rm -d --name nginx-label agocho/nginx-label:1.0
+      ```
+      ```
+      docker inspect <YOUR_CONTAINER_ID> |grep -i labels -A2
+      ```
+      ```
+      docker rm $(docker ps -aq) -f 
+      docker rmi $(docker images -aq) -f 
+      ```
+      
+      </details>
+
+13. <b>LAB 13: ONBUILD</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker build -t agocho/nginx-label:1.0 . # you have to go into the lab13 folder and find the content of the Dockerfile
+      ```
+      ```
+      docker images
+      docker build -t agocho/busy-onbuild .
+      ```
+      ```
+      docker build --file "DockerfileTrigger" -t agocho/busy-child-onbuild . # you should see the onbuild RUN ECHO
+      ```
+      ```
+      docker rm $(docker ps -aq) -f 
+      docker rmi $(docker images -aq) -f 
+      ```
+      
+      </details>
