@@ -283,3 +283,57 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       
       </details>
+      
+8. <b>LAB 8: Create an image with ARG instruction</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker build -t agocho/alpine-arg . # you have to go into the lab8 folder and find the content of the Dockerfile
+      ```
+      ```
+      docker images
+      docker build -t agocho/alpine-arg:1.0
+      ```
+      docker build -t agocho/alpine-arg:1.1 --build-arg command=whoami . # you can overrite the ARG param
+      ```
+      docker rm $(docker ps -a -q) -f 
+      docker rmi $(docker images -a -q) -f 
+      ```
+      
+      </details>
+
+9. <b>LAB 9: ENV instruction</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker build -t agocho/alpine-env . # you have to go into the lab9 folder and find the content of the Dockerfile
+      ```
+      ```
+      docker images
+      docker run agocho/alpine-env:latest
+      ```
+      docker run --env MESSAGE="We are testing imperative commands" agocho/alpine-env
+      ```
+      docker rm $(docker ps -aq) -f 
+      docker rmi $(docker images -aq) -f 
+      ```
+      
+      </details>
+
+10. <b>LAB 10: VOLUME instruction</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker build -t agocho/nginx-vol . # you have to go into the lab10 folder and find the content of the Dockerfile
+      ```
+      ```
+      docker images
+      docker run agocho/nginx-vol:latest
+      docker volume ls
+      docker inspect --format='{{.Mounts}}' <YOUR_CONTAINER_ID>
+      ```
+      docker rm $(docker ps -aq) -f 
+      docker rmi $(docker images -aq) -f 
+      ```
+      
+      </details>
