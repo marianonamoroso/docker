@@ -8,6 +8,6 @@ This repository contains helpful use commands and exercises for training Docker.
 
 <b>Exercises:</b><br> 
 
-- https://github.com/marianonamoroso/docker/tree/main/docker101
-- https://github.com/marianonamoroso/docker/tree/main/docker102
-- https://github.com/marianonamoroso/docker/tree/main/docker103
+- Docker101: https://github.com/marianonamoroso/docker/tree/main/docker101
+- Docker102: https://github.com/marianonamoroso/docker/tree/main/docker102
+- Docker103: https://github.com/marianonamoroso/docker/tree/main/docker103
