@@ -494,7 +494,7 @@ This repository contains helpful use commands and exercises for training Docker.
       docker inspect myvol
       ```
       ```
-      docker volume rm myvol
+      docker volume rm myvol # docker volume rm $(docker volume ls -q)
       ```
       </details>
 
@@ -502,6 +502,27 @@ This repository contains helpful use commands and exercises for training Docker.
       <details><summary>Show</summary>
 
       ```
+      docker run -it -v my-volume:/data --name my-container-1 selaworkshops/busybox:latest
+      cd /data/
+      echo "volume" > volume.txt
+      ```
+      ```
+      docker run -it -v my-volume:/data --name my-container-2 selaworkshops/busybox:latest
+      cd /data/
+      ls # you should see the volume.txt
+      ```
+      ```
+      docker rm $(docker ps -a -q)
+      ```
+      ```
+      docker run -it -v my-volume:/data --name my-container-3 selaworkshops/busybox:latest
+      cd /data/
+      ls # you should see the volume.txt
+      ```
+      ```
+      docker rm $(docker ps -aq) -f 
+      docker rmi $(docker images -aq) -f 
+      docker volume rm $(docker volume ls -q)
       ```
       </details>
       
