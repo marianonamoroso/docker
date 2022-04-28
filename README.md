@@ -482,3 +482,26 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       
       </details>
+
+<h3>Volumes</h3>
+
+1. <b>Managing volumes through Docker CLI</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker volume create myvol
+      docker volume ls
+      docker inspect myvol
+      ```
+      ```
+      docker volume rm myvol
+      ```
+      </details>
+
+2. <b>Creating Volume Mount from docker run command & sharing same Volume Mounts among multiple containers</b>
+      <details><summary>Show</summary>
+
+      ```
+      ```
+      </details>
+      
