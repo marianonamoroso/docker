@@ -411,7 +411,7 @@ This repository contains helpful use commands and exercises for training Docker.
       docker run -d -P --name nginx-8080 agocho/nginx-healthcheck:latest
       ```
       ```
-      docker logs <YOUR_CONTAINER> -f # 127.0.0.1 - you should see the following entry:  "GET / HTTP/1.1" 200 615 "-" "curl/7.74.0" "-"
+      docker logs <YOUR_CONTAINER> -f # you should see the following entry:  "GET / HTTP/1.1" 200 615 "-" "curl/7.74.0" "-"
       ```
       ```
       docker ps # you should see "healthy" in the STATUS section
