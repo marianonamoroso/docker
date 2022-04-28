@@ -312,7 +312,9 @@ This repository contains helpful use commands and exercises for training Docker.
       docker images
       docker run agocho/alpine-env:latest
       ```
+      ```
       docker run --env MESSAGE="We are testing imperative commands" agocho/alpine-env
+      ```
       ```
       docker rm $(docker ps -aq) -f 
       docker rmi $(docker images -aq) -f 
