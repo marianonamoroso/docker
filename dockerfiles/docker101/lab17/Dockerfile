@@ -7,7 +7,6 @@ LABEL LAB="#16"
 RUN addgroup service && \ 
     adduser -D userservice -g service
     
-
 USER userservice
 
 ENTRYPOINT [ "sh" ]
