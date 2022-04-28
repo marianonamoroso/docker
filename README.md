@@ -400,3 +400,29 @@ This repository contains helpful use commands and exercises for training Docker.
       ```
       
       </details>
+
+14. <b>LAB 14: HEALTHCHECK</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker build -t agocho/nginx-healthcheck . # you have to go into the lab14 folder and find the content of the Dockerfile
+      ```
+      ```
+      docker run -d -P --name nginx-8080 agocho/nginx-healthcheck:latest
+      ```
+      ```
+      docker logs <YOUR_CONTAINER> -f # 127.0.0.1 - you should see the following entry:  "GET / HTTP/1.1" 200 615 "-" "curl/7.74.0" "-"
+      ```
+      ```
+      docker ps # you should see "healthy" in the STATUS section
+      ```
+      ```
+      docker run -d --name nginx-80 -P --env NGINX_PORT=5000 agocho/nginx-healthcheck:latest
+      docker ps # you should see "unhealthy" in the STATUS section because we override the curl port check to 5000
+      ```
+      ```
+      docker rm $(docker ps -aq) -f 
+      docker rmi $(docker images -aq) -f 
+      ```
+      
+      </details>
