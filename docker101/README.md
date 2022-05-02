@@ -522,9 +522,20 @@
 
 <h3>Networking</h3>
 
-1. <b>LAB 1:</b>
+1. <b>LABS [1-3]:</b>
       <details><summary>Show</summary>
 
       ```
+      docker network
+      docker network inspect bridge
+      docker info
+      ```
+      </details>
+
+1. <b>LAB 4:</b>
+      <details><summary>Show</summary>
+
+      ```
+      
       ```
       </details>
