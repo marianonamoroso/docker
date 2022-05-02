@@ -531,11 +531,3 @@
       docker info
       ```
       </details>
-
-1. <b>LAB 4:</b>
-      <details><summary>Show</summary>
-
-      ```
-      
-      ```
-      </details>
