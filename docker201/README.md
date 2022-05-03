@@ -32,7 +32,7 @@
       <details><summary>Show</summary>
 
       ```
-      docker compose build # you have to execute the cmd in the lab04 folder where our dockerfile is located.
+      docker compose build # you have to execute the cmd in the lab04 folder where our dockerfile and docker-compose.yml are located.
       ```
       </details>
 
@@ -40,17 +40,20 @@
       <details><summary>Show</summary>
 
       ```
-      docker-compose pull # you have to execute the cmd in the lab05 folder where our dockerfile is located.
+      docker-compose pull # you have to execute the cmd in the lab05 folder where our docker-compose.yml is located.
       ```
       </details>
 
-6. <b>LAB 6: pull</b>
+6. <b>LAB 6: push</b>
       <details><summary>Show</summary>
 
       ```
-      docker-compose pull # you have to execute the cmd in the lab05 folder where our dockerfile is located.
+      docker compose build # you have to execute the cmd in the lab06 folder where our dockerfiles and docker-compose.yml are located.
       ```
       ```
       docker images
+      ```
+      ```
+      docker-compose push nginx_custom # you have to check your dockerhub repo
       ```
       </details>
