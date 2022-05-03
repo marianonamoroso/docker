@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  nginx_custom:
+    build:
+      context: .
+      dockerfile: Dockerfile_Nginx
+    image: agocho/nginx_custom:v1.0
+  apache_custom:
+    build:
+      context: .
+      dockerfile: Dockerfile_Apache
+    image: agocho/apache_custom:v1.0

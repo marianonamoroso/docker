@@ -1,0 +1,3 @@
+FROM httpd:alpine
+RUN echo "HTTPD" >/usr/local/apache2/htdocs/index.html
+CMD [ "/usr/sbin/httpd", "-D", "FOREGROUND" ]
