@@ -2,7 +2,7 @@
 
 <h2>Docker201</h2>
 
-<h3>LABS</h3>
+<h3>Docker Compose</h3>
 
 1. <b>LAB 1: version</b>
       <details><summary>Show</summary>
