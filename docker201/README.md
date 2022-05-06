@@ -67,9 +67,6 @@
       ```
       docker-compose ps
       ```
-      ```
-      docker-compose push nginx_custom # you have to check your dockerhub repo
-      ```
       </details>
 
 8. <b>LAB 8: images</b>
@@ -81,5 +78,47 @@
       ```
       docker-compose images
       docker-compose ps
+      ```
+      </details>
+
+9. <b>LAB 9: ps</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker-compose up -d # you have to execute the cmd in the lab09 folder where the docker-compose.yml is located.
+      ```
+      ```
+      docker-compose images
+      docker-compose ps
+      docker-compose ps --services
+      ```
+      </details>
+
+10. <b>LAB 10: stop</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker-compose ps
+      ```
+      ```
+      docker-compose stop
+      docker-compose ps # you should not see the containers
+      ```
+      </details>
+
+11. <b>LAB 11: start</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker-compose start
+      docker-compose ps
+      ```
+      </details>
+
+12. <b>LAB 12: restart</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker-compose restart
       ```
       </details>

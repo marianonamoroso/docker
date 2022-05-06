@@ -1,0 +1,24 @@
+services:
+  webserver:
+    image: nginx:latest
+    container_name: nginx_lab09
+    restart: unless-stopped
+    ports:
+    - "80:80"
+    - "443:443"
+  dbserver:
+    image: postgres:latest
+    container_name: postgres_lab09
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+       POSTGRES_ROOT_PASSWORD: mypwd
+       POSTGRES_USER: mna
+       POSTGRES_PASSWORD: mypwd
+       POSTGRES_DATABASE: mna
+    volumes:
+      - db_data:/var/lib/postgres
+volumes:
+  db_data:
+      
