@@ -154,12 +154,101 @@
       <details><summary>Show</summary>
 
       ```
-      docker-compose ps # you should apply the docker-compose.yml created in lab09
+      docker-compose ps # you should apply the docker-compose.yml created in lab09 (docker-compose up -d)
       ```
       ```
       docker-compose port webserver 443 # you should see 0.0.0.0:443 
       docker-compose port webserver 80  # you should see 0.0.0.0:443 
       docker-compose port dbserver 5432 # you should see 0.0.0.0:5432 
       ```
+      </details>
+
+17. <b>LAB 17: run</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker-compose ps # you should apply the docker-compose.yml created in lab09 (docker-compose up -d)
+      ```
+      ```
+      docker-compose run webserver /bin/sh
+      ```
+      </details>
+
+18. <b>LAB 18: scale</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker-compose up -d # you have to execute the cmd in the lab18 folder where the docker-compose.yml is located.
+      ```
+      ```
+      docker-compose ps --services
+      ```
+      ```
+      docker-compose scale redis-slave=3
+      docker-compose ps # you should see new three (3) replicas
+      ```
+
+      </details>
+
+19. <b>LAB 19: exec</b>
+      <details><summary>Show</summary>
+
+   ```
+      docker-compose ps # you should apply the docker-compose.yml created in lab09 (docker-compose up -d)
+      ```
+      ```
+      docker-compose ps --services
+      ```
+      ```
+      docker-compose exec webserver sh -c "echo 'EXEC: docker-compose exec execution' > /usr/share/nginx/html/index.html"
+      ```
+      ```
+      curl http://localhost:80 # you should see the following text: EXEC: docker-compose exec execution
+      ```
+
+      </details>
+      
+20. <b>LAB 20: kill</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker-compose up -d # you have to execute the cmd in the lab18 folder where the docker-compose.yml is located.
+      ```
+      ```
+      docker-compose kill # you kill the containers
+      ```
+
+      </details>
+
+21. <b>LAB 21: rm</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker-compose up -d # you have to execute the cmd in the lab18 folder where the docker-compose.yml is located.
+      ```
+      ```
+      docker-compose ps --services
+      docker-compose stop webserver
+      docker-compose rm # the container should be in the stopped state
+
+      ```
+
+      </details>
+
+22. <b>LAB 22: down</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker-compose up -d # you have to execute the cmd in the lab18 folder where the docker-compose.yml is located.
+      ```
+      ```
+      docker-compose down --rmi all
+      docker-compose down --volumes
+      ```
+      ```
+      docker images # you shouldn't see images
+      docker ps # you shouldn't see containers
+      ```
+
       </details>
       
