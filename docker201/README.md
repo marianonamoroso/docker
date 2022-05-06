@@ -193,7 +193,7 @@
 19. <b>LAB 19: exec</b>
       <details><summary>Show</summary>
 
-   ```
+      ```
       docker-compose ps # you should apply the docker-compose.yml created in lab09 (docker-compose up -d)
       ```
       ```
