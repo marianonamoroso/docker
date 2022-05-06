@@ -57,3 +57,29 @@
       docker-compose push nginx_custom # you have to check your dockerhub repo
       ```
       </details>
+
+7. <b>LAB 7: up</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker-compose up -d # you have to execute the cmd in the lab07 folder where our dockerfiles and docker-compose.yml are located.
+      ```
+      ```
+      docker-compose ps
+      ```
+      ```
+      docker-compose push nginx_custom # you have to check your dockerhub repo
+      ```
+      </details>
+
+8. <b>LAB 8: images</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker-compose up -d # you have to execute the cmd in the lab08 folder where our dockerfiles and docker-compose.yml are located.
+      ```
+      ```
+      docker-compose images
+      docker-compose ps
+      ```
+      </details>

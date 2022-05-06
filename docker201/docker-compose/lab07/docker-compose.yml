@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+  webserver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: webapp:1.0
+    container_name: nginx-lab07
+    ports:
+    - "80:80"
+  dbserver:
+    image: postgres:latest
+    container_name: postgres-lab07
+    restart: unless-stopped
+    ports:
+    - "5432:5432"
+    environment:
+      POSTGRES_ROOT_PASSWORD: "mypwd"
+      POSTGRES_USER: "mna"
+      POSTGRES_PASSWORD: "mypwd"
+      POSTGRES_DATABASE: "mna"
+    volumes:
+      - db_data:/var/lib/postgres
+volumes:
+  db_data:
