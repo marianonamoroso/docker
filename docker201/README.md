@@ -122,3 +122,44 @@
       docker-compose restart
       ```
       </details>
+
+13. <b>LAB 13: pause</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker-compose pause
+      docker-compose ps
+      ```
+      </details>
+
+14. <b>LAB 14: unpause</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker-compose unpause
+      docker-compose ps
+      ```
+      </details>
+
+15. <b>LAB 15: logs</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker logs <YOUR_CONTAINER_ID> -f
+      docker logs --tail="4" <YOUR_CONTAINER_ID>
+      ```
+      </details>
+
+16. <b>LAB 16: port</b>
+      <details><summary>Show</summary>
+
+      ```
+      docker-compose ps # you should apply the docker-compose.yml created in lab09
+      ```
+      ```
+      docker-compose port webserver 443 # you should see 0.0.0.0:443 
+      docker-compose port webserver 80  # you should see 0.0.0.0:443 
+      docker-compose port dbserver 5432 # you should see 0.0.0.0:5432 
+      ```
+      </details>
+      
