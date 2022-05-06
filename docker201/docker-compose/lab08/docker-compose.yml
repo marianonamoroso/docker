@@ -1,0 +1,26 @@
+services:
+  webserver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: webapp:v1.0
+    container_name: nginx_lab08
+    ports:
+      - "80:80"
+  dbserver:
+    image: postgres:latest
+    container_name: postgres_lab08
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+       POSTGRES_ROOT_PASSWORD: mypwd
+       POSTGRES_USER: mna
+       POSTGRES_PASSWORD: mypwd
+       POSTGRES_DATABASE: mna
+    volumes:
+      - db_data:/var/lib/postgres
+volumes:
+  db_data:
+      
+
