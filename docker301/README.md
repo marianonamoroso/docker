@@ -73,8 +73,12 @@
 
 <h3>Security Scanning with Docker Hub</h3>
 
-1. <b>LAB 1: docker-hub</b></br>
+1. <b>LAB 1: docker-hub</b>
+      <details><summary>Show</summary>
+
+      ```
       You have to create a new private repo and enable the vulnerability scanning.
+      ```
 
 2. <b>LAB 2: docker-hub and create the image</b>
       <details><summary>Show</summary>
@@ -102,8 +106,12 @@
       ```
       </details>
 
-5. <b>LAB 5: scan</b></br>
+5. <b>LAB 5: scan</b>
+      <details><summary>Show</summary>
+
+      ```
       You should see the scan results 
+      ```
 
 
       
